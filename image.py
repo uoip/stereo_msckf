@@ -91,7 +91,7 @@ class ImageProcessor(object):
         self.R_cam1_imu = self.T_cam1_imu[:3, :3]
         self.t_cam1_imu = self.T_cam1_imu[:3, 3]
 
-    def stareo_callback(self, stereo_msg):
+    def stereo_callback(self, stereo_msg):
         """
         Callback function for the stereo images.
         """
@@ -990,7 +990,7 @@ if __name__ == '__main__':
         # cv2.imshow('left', np.hstack([x.cam0_image, x.cam1_image]))
         # cv2.waitKey(1)
         # timestamps.append(x.timestamp)
-        image_processor.stareo_callback(msg)
+        image_processor.stereo_callback(msg)
 
     imu_publisher.stop()
     img_publisher.stop()
