@@ -38,7 +38,7 @@ class VIO(object):
             if self.viewer is not None:
                 self.viewer.update_image(img_msg.cam0_image)
 
-            feature_msg = self.image_processor.stareo_callback(img_msg)
+            feature_msg = self.image_processor.stereo_callback(img_msg)
 
             if feature_msg is not None:
                 self.feature_queue.put(feature_msg)
