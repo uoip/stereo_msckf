@@ -11,7 +11,7 @@ For algorithm details, please refer to:
 * numpy
 * scipy
 * cv2
-* [pangolin](https://github.com/uoip/pangolin) (optional, for trajectory/poses visualization)
+* [pangolin](https://github.com/stevenlovegrove/Pangolin) (optional, for trajectory/poses visualization)
 
 ## Dataset
 * [EuRoC MAV](http://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets): visual-inertial datasets collected on-board a MAV. The datasets contain stereo images, synchronized IMU measurements, and ground-truth.  
